@@ -1,0 +1,49 @@
+<div class="bg-gray-100 py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="lg:flex lg:items-center lg:justify-between">
+        <div class="lg:w-1/2">
+          <img src="{{ section.settings.image | img_url: 'master' }}" alt="Image" class="w-full">
+        </div>
+        <div class="mt-8 lg:mt-0 lg:w-1/2 lg:pl-12">
+        <div class="text-center">
+            <h2 class="text-3xl font-bold leading-tight text-gray-900">{{ section.settings.header_text }}</h2>
+            <p class="mt-4 text-lg text-gray-700">{{ section.settings.description_text }}</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+{% schema %}
+{
+  "name": "TL Image with Text",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "Select an image for the section."
+    },
+    {
+      "type": "text",
+      "id": "header_text",
+      "label": "Header Text",
+      "default": "Your Header Text Here"
+    },
+    {
+      "type": "text",
+      "id": "description_text",
+      "label": "Description Text",
+      "default": "Your description text goes here. You can add as much text as you need to describe your image."
+    }
+  ],
+  "blocks": [],
+  "presets": [
+    {
+      "name": "TL Image with Text",
+      "category": "Text and media"
+    }
+  ]
+}
+{% endschema %}
+
