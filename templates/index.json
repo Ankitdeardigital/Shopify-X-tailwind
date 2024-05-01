@@ -66,19 +66,10 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
-    },
-    "tailwind_image_with_text_8BqyXw": {
-      "type": "tailwind-image-with-text",
-      "settings": {
-        "image": "shopify:\/\/shop_images\/DZR_MINNA_PAIR_FRONT_WEB.jpg",
-        "header_text": "Your Header Text Here",
-        "description_text": "Your description text goes here. You can add as much text as you need to describe your image."
-      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection",
-    "tailwind_image_with_text_8BqyXw"
+    "featured_collection"
   ]
 }
